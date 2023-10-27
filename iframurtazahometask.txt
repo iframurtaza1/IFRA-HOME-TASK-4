@@ -1,0 +1,67 @@
+
+TASK-1
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    for (int i=1; i<=150; i++)
+    {
+        if (i % 10)
+        cout<<i<<", ";
+        continue;
+    }
+
+    return 0;
+}
+
+
+TASK-2
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int num;
+    int sum = 0;
+    
+    cout<<"please enter any number:";
+    cin >> num;
+    
+    for (int i = num; i > 0; i = i / 10)
+    {
+        sum += i % 10;
+    }
+    
+    cout<<sum;
+    
+    return 0;
+}
+
+
+
+TASK-3
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int num;
+    cout<<"please enter any number:";
+    cin>>num;
+    
+    for (int i = 2; i < num; i++)
+    {
+        if (num % i == 0)
+        {
+            cout<<"the given number is not ";
+            break;
+        }
+    }
+    cout<<"prime";
+    
+    return 0;
+}
